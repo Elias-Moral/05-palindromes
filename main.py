@@ -2,10 +2,17 @@
 
 
 def ispalindrome(p):
+    table = str.maketrans("éèêâàäîïûüôöç", "eeeaaaiiuuooc")
+    table = str.maketrans("", "", " ")
+    p = texte.translate(table)
 
-    # votre code ici
-    
-    return False
+
+    if (p[::-1]==p){
+        return true
+    }
+    else{
+        return False
+    }
 
 #### Fonction principale
 
